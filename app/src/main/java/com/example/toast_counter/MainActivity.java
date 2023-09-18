@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int m_count=0;
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void makeToast(View view) {
+        Toast toast=Toast.makeText(this,"Toast abc",Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
